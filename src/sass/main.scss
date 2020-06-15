@@ -6,11 +6,11 @@
 @import 'base.scss';
 @import 'variables.scss';
 
-@import 'components/header.scss';
-@import 'components/banner.scss';
-@import 'components/about.scss';
-@import 'components/violet-program.scss';
-@import 'components/directions-goiteens.scss';
-@import 'components/how-we-learn.scss';
-@import 'components/structure-learn.scss';
-@import 'components/footer.scss';
+@import 'components/header.scss'; /* Рома - Главный хедер */
+@import 'components/banner.scss'; /* Рома - Главный баннер */
+@import 'components/about.scss'; /* Рома - картинка с компьютерами и текст */
+@import 'components/violet-program.scss'; /* Саша - фиолетовая программа */
+@import 'components/directions-goiteens.scss'; /* Саша - Направления обучения */
+@import 'components/how-we-learn.scss'; /* Саша - как мы обучаем */
+@import 'components/structure-learn.scss'; /* Ярослав - Структура обучения */
+@import 'components/footer.scss'; /* Ярослав - футтер */
