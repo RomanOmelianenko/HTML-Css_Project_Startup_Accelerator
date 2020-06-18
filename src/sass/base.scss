@@ -15,11 +15,18 @@ body {
 
 .container {
   width: 280px;
+  margin: 0 auto;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 690px;
+    margin: 0 auto;
   }
 }
 
@@ -27,6 +34,7 @@ body {
   .container {
     max-width: 1300px;
     width: 100%;
+    margin: 0 auto;
   }
 }
 
