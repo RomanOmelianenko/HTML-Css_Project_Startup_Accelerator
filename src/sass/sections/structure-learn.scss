@@ -50,6 +50,7 @@
     @media screen and (min-width: 768px) {
         font-size: 33px;
         margin-bottom: 70px;
+        padding-left: 35px;
     }
 
     &::before {
@@ -75,7 +76,7 @@
     align-items: center;
     width: 280px;
     height: 260px;
-    padding-left: 45px;
+    padding-left: 30px;
     border: dashed white 1px;
     border-bottom-left-radius: 25%;
     border-top-right-radius: 25%;
