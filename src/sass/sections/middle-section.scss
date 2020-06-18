@@ -1,0 +1,90 @@
+.container {
+  margin: 0 auto;
+}
+
+.middle-section {
+
+  @media (min-width: 768px) and (max-width: 1199px) { 
+    & {
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & {
+      padding-top: 112px;
+      padding-bottom: 112px;
+    }
+    
+  }
+}
+
+.middle-section-directions {
+  @media (max-width: 767px) {
+    & {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) { 
+    & {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.middle-section-how-we-learn {
+  @media (min-width: 1200px) {
+    & {
+      background-color: #fafafa;
+    }
+  }
+}
+
+.middle-section__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #272727;
+
+  @media (max-width: 767px) { 
+    & {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 768px) { 
+    & {
+      font-size: 33px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) { 
+    & {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: 1200px) { 
+    & {
+      margin-bottom: 68px;
+    }
+  }
+}
+
+.middle-section__title::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: rgb(233, 172, 56);
+  background-image: url('../images/middle-section/section-title-target.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}

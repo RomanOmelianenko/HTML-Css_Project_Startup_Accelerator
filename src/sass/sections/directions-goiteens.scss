@@ -1,0 +1,178 @@
+.directions-list {
+  list-style: none;
+
+  @media (min-width: 768px) { 
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.directions-list__item {
+  background-color: #fafafa;
+
+  &:hover {
+    background-color: #e9ac38;
+  }
+
+  @media (max-width: 767px) { 
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  
+    & {
+      padding: 30px 45px;
+    }
+  }
+
+  @media (min-width: 768px) { 
+    & {
+      padding: 58px 45px 52px 56px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) { 
+    & {
+      flex-basis: 50%;
+    }
+
+    &:nth-child(1) {
+      border-bottom: 1px dashed #ededed;
+      border-right: 1px dashed #ededed;
+    }
+
+    &:nth-child(2) {
+      border-bottom: 1px dashed #ededed;
+    }
+
+    &:nth-child(3) {
+      border-right: 1px dashed #ededed;
+    }
+  }
+
+  @media (min-width: 1200px) { 
+    & {
+      flex-basis: 25%;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px dashed #ededed;
+    }
+
+  }
+}
+
+.directions-list__name {
+  margin-bottom: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+
+  @media (max-width: 767px) { 
+    & {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 768px) { 
+    & {
+      font-size: 30px;
+    }
+  }
+}
+
+.directions-list__description {
+  margin-bottom: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #444444;
+
+  @media (max-width: 1999px) { 
+    & {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: 2000px) { 
+    & {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+
+.directions-list__years {
+  margin-bottom: 20px;
+  color: #e9ac38;
+}
+
+.directions-list__number {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+
+  @media (max-width: 767px) { 
+    & {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 768px) { 
+    & {
+      font-size: 40px;
+    }
+  }
+
+}
+
+.directions-list__number span {
+  position: absolute;
+  top: -5px;
+  right: -35px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.directions-list__number span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e9ac38;
+}
+
+.directions-list__arrow {
+  background-color: transparent;
+  border: none;
+}
+
+.directions-list__arrow:hover,
+.directions-list__arrow:focus {
+  outline: none;
+}
+
+.directions-list__arrow svg{
+  fill: rgb(233, 172, 56);
+  width: 19px;
+  height: 13px;
+}
+
+.directions-list__item:hover .directions-list__description,
+.directions-list__item:hover .directions-list__years {
+  color: #ffffff;
+}
+
+.directions-list__item:hover .directions-list__number span::after {
+  background-color: #ffffff;
+}
+
+.directions-list__item:hover .directions-list__arrow svg {
+  fill: #ffffff;
+}

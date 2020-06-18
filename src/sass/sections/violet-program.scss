@@ -1,0 +1,76 @@
+.program-section {
+
+  @media (max-width: 767px) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) { 
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 72px;
+  }
+
+}
+
+.program {
+  background-color: rgb(117, 80, 222);
+  border-radius: 8px;
+
+  @media (max-width: 767px) {
+    padding: 25px 24px 30px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 35px 108px 40px 78px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 70px 314px 68px 227px;
+  }
+}
+
+.program__text {
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px){
+    position: relative;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.program__text::before {
+  content: '';
+  display: block;
+  background-color: rgb(233, 172, 56);
+
+  @media (max-width: 767px) {
+    margin: 0 auto 16px;
+    width: 60px;
+    height: 2px;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 5px;
+    left: -24px;
+    width: 2px;
+    height: 95%;
+  }
+
+}
