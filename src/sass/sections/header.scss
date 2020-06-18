@@ -1,11 +1,13 @@
 /* Header */
 
 .container-banner {
-  background: url(../../images/top-section/mobile/img_mob.png);
-  width: 320px;
-  height: 560px;
+  background: url(../../images/top-section/desctop/img.png);
+  width: 100%;
+  min-height: 560px;
   margin: 0 auto;
   margin-bottom: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -92,11 +94,11 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container-banner {
-    height: 600px;
-    width: 768px;
-    background: url(../../images/top-section/tablet/rectangle.png);
-  }
+  // .container-banner {
+  //   height: 600px;
+  //   width: 768px;
+  //   background: url(../../images/top-section/tablet/rectangle.png);
+  // }
 
   .container-header {
     width: 690px;
@@ -248,16 +250,16 @@
 
 @media screen and (min-width: 1200px) {
   .container-banner {
-    height: 970px;
+    // height: 970px;
     // height: auto;
-    width: 1920px;
+    // width: 1920px;
     // margin: 0 auto;
     margin-bottom: 118px;
     // width: 100%;
-    background: url(../../images/top-section/desktop/img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: url(../../images/top-section/desktop/img.png);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
   }
 
   .container-header {
