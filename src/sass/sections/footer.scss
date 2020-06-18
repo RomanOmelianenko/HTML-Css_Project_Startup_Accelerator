@@ -1,0 +1,217 @@
+// .container {
+//     margin: 0 auto;
+// }
+
+.footer {
+    // display: flex;
+    // flex-flow: column;
+    // align-items: center;
+    // justify-items: center;
+    // margin: 0 auto;
+    // width: 320px;
+    // padding-left: 75px;
+    // display: flex;
+    // flex-flow: column;
+    padding-top: 40px;
+
+    &__background {
+        background-color: #222;
+        background-size: 100%;
+    }
+
+    &__site-logo {
+        margin-bottom: 20px;
+        padding-left: 40px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 25px;  
+        }
+
+        @media screen and (min-width: 1200px){
+            padding-left: 0;
+        }
+
+    }
+
+    &__contact-section {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+               
+        }
+    }
+
+    &__address {
+        // padding-top: 20px;
+        width: 185px;
+        color: #9699a6;
+        font-family: $family-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 0;
+            padding-left: 25px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 0;  
+        }
+    }
+}
+
+.footer__contact {
+    padding-left: 40px;
+    // width: 145px;
+    color: #9699a6;
+    font-family: $family-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 35px;
+    
+    @media screen and (min-width: 768px) {
+        padding-left: 0;
+    }
+}
+
+.footer__contact-list {
+    list-style: none;
+    color: #9699a6;
+    font-family: $family-sans;
+    text-decoration: none;
+}
+
+.footer__contact-link {
+    color: #9699a6;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer__contact--email {
+    color: #fffff;
+    font-family: $family-sans;
+    text-decoration: none;
+}
+
+.footer__buttons {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        // margin: 0 auto;
+        // display: flex;
+    // flex-flow: column;
+    // justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 518px;
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.footer__button {
+    padding-top: 10px;
+    margin-bottom: 35px;
+    padding-left: 40px;
+
+}
+
+.button {
+    color: #f6f9fa;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-style: none;
+    width: 192px;
+    height: 42px;
+    background-color: #e9ac38;
+    border-radius: 5px;
+
+    &:hover {
+    box-shadow: 0 3px 5px rgba(233, 172, 56, 0.4);
+    }
+}
+
+.footer__social {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 15px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 10px;
+    }
+}
+
+.footer__social-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+}
+
+.footer__agreement {
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    &-background {
+        background-color: #151515;
+        background-size: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 20px;
+        // width: 620px;
+        // padding-left: 40px;
+        // margin: 0 auto;
+        // display: inline-flex;
+        // flex-flow: row;
+        // justify-content: space-between;
+        // align-items: center;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 0;
+    }
+}
+
+.footer_agreement-link {
+        text-decoration: none;
+        color: #626263;
+        font-family: $family-sans;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 25px;
+
+
+}
+
+
+
+
+
+
+
+
