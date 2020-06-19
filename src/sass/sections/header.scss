@@ -1,7 +1,7 @@
 /* Header */
 
 .container-banner {
-  background: url(../../images/top-section/desktop/banner.png);
+  background: url('../images/top-section/desktop/banner.png');
   width: 100%;
   // min-height: 560px;
   height: auto;
@@ -20,7 +20,7 @@
   /* Ul */
 
   &__burger {
-    background: url(../../images/top-section/mobile/buger.png);
+    background: url('../images/top-section/mobile/buger.png');
     height: 20px;
     width: 30px;
     background-position: center;
@@ -88,7 +88,7 @@
     padding-top: 26px;
             
     &__burger {
-      background: url(../../images/top-section/tablet/buger.png);
+      background: url('../images/top-section/tablet/buger.png');
       background-position: center;
       background-repeat: no-repeat;
     }
