@@ -31,10 +31,10 @@
 
 .program__text {
   font-family: 'Ubuntu', sans-serif;
-  color: #ffffff;
+  color: $color-white;
 
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: $font-medium-18;
     line-height: 24px;
     text-align: center;
   }
@@ -44,12 +44,12 @@
   }
 
   @media (min-width: 768px) and (max-width: 1199px) {
-    font-size: 20px;
+    font-size:  $font-medium-20;
     line-height: 28px;
   }
 
   @media (min-width: 1200px) {
-    font-size: 25px;
+    font-size: $font-large;
     line-height: 35px;
   }
 }
@@ -57,7 +57,7 @@
 .program__text::before {
   content: '';
   display: block;
-  background-color: rgb(233, 172, 56);
+  background-color: $color-orange;
 
   @media (max-width: 767px) {
     margin: 0 auto 16px;

@@ -5,7 +5,7 @@
     & {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }
@@ -14,8 +14,9 @@
   background-color: #fafafa;
 
   &:hover {
-    background-color: #e9ac38;
+    background-color: $color-orange;
   }
+
 
   @media (max-width: 767px) { 
     &:not(:last-child) {
@@ -29,26 +30,30 @@
 
   @media (min-width: 768px) { 
     & {
-      padding: 58px 45px 52px 56px;
+      // padding: 58px 45px 52px 56px;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) { 
+  @media (min-width: 768px) { 
     & {
-      flex-basis: 50%;
+      // flex-basis: 50%;
+      width: 310px;
+      height: 295px;
+      padding-top: 35px;
+      padding-left: 35px;
     }
 
     &:nth-child(1) {
-      border-bottom: 1px dashed #ededed;
-      border-right: 1px dashed #ededed;
+      border-bottom: 1px dashed $color-white;
+      border-right: 1px dashed $color-white;
     }
 
     &:nth-child(2) {
-      border-bottom: 1px dashed #ededed;
+      border-bottom: 1px dashed $color-white;
     }
 
     &:nth-child(3) {
-      border-right: 1px dashed #ededed;
+      border-right: 1px dashed $color-white;
     }
   }
 
@@ -58,7 +63,7 @@
     }
 
     &:not(:last-child) {
-      border-right: 1px dashed #ededed;
+      border-right: 1px dashed $color-white;
     }
 
   }
@@ -67,13 +72,14 @@
 .directions-list__name {
   margin-bottom: 30px;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
+  font-size: $font-large;
   line-height: 1;
   font-weight: 700;
+  width: 200px;
 
   @media (max-width: 767px) { 
     & {
-      font-size: 25px;
+      font-size: $font-large;
     }
   }
 
@@ -87,31 +93,34 @@
 .directions-list__description {
   margin-bottom: 40px;
   font-family: 'Ubuntu', sans-serif;
-  color: #444444;
+  color: $color-black;
 
   @media (max-width: 1199px) { 
     & {
       font-size: 16px;
       line-height: 20px;
+      width: 201px;
+      
     }
   }
-
+  
   @media (min-width: 1200px) { 
     & {
-      font-size: 18px;
+      font-size: $font-medium-18;
       line-height: 27px;
+      width: 223px;
     }
   }
 }
 
 .directions-list__years {
   margin-bottom: 20px;
-  color: #e9ac38;
+  color: $color-orange;
 }
 
 .directions-list__number {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $family-sans;
   font-size: 30px;
   line-height: 1;
   font-weight: 700;
@@ -145,7 +154,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #e9ac38;
+  background-color: $color-orange;
 }
 
 .directions-list__arrow {
@@ -159,20 +168,20 @@
 }
 
 .directions-list__arrow svg{
-  fill: rgb(233, 172, 56);
+  fill: $color-orange;
   width: 19px;
   height: 13px;
 }
 
 .directions-list__item:hover .directions-list__description,
 .directions-list__item:hover .directions-list__years {
-  color: #ffffff;
+  color: $color-white;
 }
 
 .directions-list__item:hover .directions-list__number span::after {
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .directions-list__item:hover .directions-list__arrow svg {
-  fill: #ffffff;
+  fill: $color-white;
 }

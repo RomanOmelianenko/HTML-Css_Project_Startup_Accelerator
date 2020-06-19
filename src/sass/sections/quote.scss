@@ -1,15 +1,16 @@
-/* Цитата */
+/* Quote */
   
 .blockquote {
-  width: 269px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 42px;
+  padding: 0 45px;
 
   &__icon {
     display: inline-block;
     height: 16px;
     width: 18px;
-    background: url(../../images/top-section/icons/quote.png);
+    background: url(../../images/top-section/mobile/quote.png);
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 10px;
@@ -22,11 +23,12 @@
   
   &__paragraph {
     margin: 0;
-    width: 244px;
-    font-size: 14px;
+    width: 100%;
+    font-size: $font-small;
     font-family: "Ubuntu-Regular";
     line-height: 1.429;
     margin-bottom: 22px;
+    color: $color-grey;
   }
 
   &__img {
@@ -41,6 +43,7 @@
     width: 700px;
     margin: 0 auto;
     margin-bottom: 42px;
+    padding: 0;
 
     &__icon {
       display: block;
@@ -51,7 +54,7 @@
     }
 
     &__paragraph {
-      font-size: 18px;
+      font-size: $font-medium-18;
       line-height: 1.389;
       width: 620px;
       padding-left: 40px;
@@ -73,6 +76,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 118px;
+    padding: 0;
 
     &__quote {
       width: 500px;
@@ -83,9 +87,6 @@
       margin: 0;
       margin-right: 80px;
 
-      // &::nth-last-child(n) {
-      //   margin-bottom: 0;
-      // }
     }
 
     &__icon {
@@ -97,9 +98,9 @@
 
     &__paragraph {
       width: 500px;
-      font-size: 20px;
+      font-size: $font-medium-20;
       font-family: "Ubuntu-Regular";
-      color: #444444;
+      color: $color-black;
       line-height: 1.75;
       padding-left: 34px;
       margin: 0;
@@ -107,13 +108,8 @@
     }
 
     &__img {
-      height: 404px;
-      width: 650px;
+      // height: 404px;
+      // width: 650px;
     }
-
-    // &__quote {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    // }
   }
 }

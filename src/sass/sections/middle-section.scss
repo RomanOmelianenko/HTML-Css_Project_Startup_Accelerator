@@ -6,8 +6,8 @@
 
   @media (min-width: 768px) and (max-width: 1199px) { 
     & {
-      padding-left: 34px;
-      padding-right: 34px;
+      // padding-left: 34px;
+      // padding-right: 34px;
     }
   }
 
@@ -35,6 +35,7 @@
 }
 
 .middle-section-how-we-learn {
+  margin-bottom: 50px;
   @media (min-width: 1200px) {
     & {
       background-color: #fafafa;
@@ -44,11 +45,12 @@
 
 .middle-section__title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: $font-medium-20;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
   color: #272727;
+  
 
   @media (max-width: 767px) { 
     & {
@@ -83,7 +85,7 @@
   height: 30px;
   border-radius: 50%;
   vertical-align: middle;
-  background-color: rgb(233, 172, 56);
+  background-color: $color-orange;
   background-image: url('../images/middle-section/section-title-target.png');
   background-repeat: no-repeat;
   background-position: center;

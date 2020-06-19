@@ -1,3 +1,8 @@
+.middle-section__title--how-learn::before {
+  background-image: url('../images/middle-section/section-title-how-learn.png');
+  background-position: 8px 6px;
+}
+
 .how-learn-list {
   list-style: none;
 
@@ -5,8 +10,13 @@
     & {
       display: flex;
       flex-wrap: wrap;
+      // padding: 0 45px;
     }
 
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 45px;
   }
 }
 
@@ -24,7 +34,8 @@
 
   @media (min-width: 768px) and (max-width: 1199px) {
     & {
-      flex-basis: 256px;
+      // flex-basis: 256px;
+      width: 45%;
       padding-left: 44px;
     }
 
@@ -40,7 +51,7 @@
 
   @media (min-width: 1200px) {
     & {
-      flex-basis: 19%;
+      flex-basis: 22%;
     }
 
     &:not(:nth-child(4n)) {
@@ -113,21 +124,21 @@
 
   @media (max-width: 767px) {
     & {
-      font-size: 14px;
+      font-size: $font-small;
       line-height: 20px;
     }
   }
 
   @media (min-width: 768px) and (max-width: 1199px) { 
     & {
-      font-size: 16px;
+      font-size: $font-medium;
       line-height: 22px;
     }
   }
 
   @media (min-width: 1200px) { 
     & {
-      font-size: 18px;
+      font-size: $font-medium-18;
       line-height: 30px;
     }
   }
