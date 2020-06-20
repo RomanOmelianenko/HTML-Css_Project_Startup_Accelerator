@@ -45,13 +45,17 @@
 .structure-learn__title {
     // display: inline-block;
     position: relative;
-    padding-left: 40px;
     color: #272727;
     font-family: $family-sans;
     font-size: $font-medium-20;
     font-weight: 700;
     line-height: 78px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 33px;
